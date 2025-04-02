@@ -19,6 +19,9 @@ const Navbar: React.FC = () => {
           <Link to="/historia" className="text-gray-700 hover:text-bossanova-300 transition-colors">
             História
           </Link>
+          <Link to="/versoes" className="text-gray-700 hover:text-bossanova-300 transition-colors">
+            Versões
+          </Link>
           <Link to="/contato" className="text-gray-700 hover:text-bossanova-300 transition-colors">
             Contato
           </Link>

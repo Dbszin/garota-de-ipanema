@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { Play, MusicIcon, Globe } from 'lucide-react';
+import { Play, MusicIcon, Globe, Mail, ArrowRight } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -91,65 +90,45 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Versões da Música Section (Substituindo o Call to Action) */}
+      {/* Contact Section */}
       <section className="py-16 bg-bossanova-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Versões Famosas</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <MusicIcon className="text-bossanova-300 mr-3" />
-                <h3 className="text-xl font-semibold">Tom Jobim & Vinícius</h3>
+          <div className="flex flex-col md:flex-row gap-10 items-center">
+            <div className="md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
+              <p className="mb-6">
+                Tem alguma dúvida, sugestão ou quer compartilhar sua experiência com a música? 
+                Adoraríamos receber seu contato!
+              </p>
+              <div className="flex items-center space-x-3 mb-4">
+                <Mail className="h-5 w-5 text-bossanova-300" />
+                <span>contato@garotadeipanema.com.br</span>
               </div>
-              <p className="mb-4 text-gray-600">A versão original em português, lançada em 1962, que iniciou o fenômeno mundial.</p>
-              <Button asChild variant="outline" size="sm" className="w-full">
-                <a href="https://www.youtube.com/watch?v=c5QfXjsoNe4" target="_blank" rel="noopener noreferrer">
-                  <Play className="mr-1" size={16} />
-                  Ouvir Original
-                </a>
-              </Button>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <Globe className="text-bossanova-300 mr-3" />
-                <h3 className="text-xl font-semibold">Stan Getz & Astrud</h3>
-              </div>
-              <p className="mb-4 text-gray-600">A versão em inglês "The Girl from Ipanema" que venceu o Grammy em 1964.</p>
-              <Button asChild variant="outline" size="sm" className="w-full">
-                <a href="https://www.youtube.com/watch?v=sVdaFQhS86E" target="_blank" rel="noopener noreferrer">
-                  <Play className="mr-1" size={16} />
-                  Ouvir em Inglês
-                </a>
-              </Button>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <MusicIcon className="text-bossanova-300 mr-3" />
-                <h3 className="text-xl font-semibold">Frank Sinatra</h3>
-              </div>
-              <p className="mb-4 text-gray-600">Frank Sinatra gravou sua versão com Tom Jobim em 1967, consolidando o sucesso mundial.</p>
-              <Button asChild variant="outline" size="sm" className="w-full">
-                <a href="https://www.youtube.com/watch?v=NldPFVKYmiw" target="_blank" rel="noopener noreferrer">
-                  <Play className="mr-1" size={16} />
-                  Sinatra & Jobim
-                </a>
-              </Button>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <MusicIcon className="text-bossanova-300 mr-3" />
-                <h3 className="text-xl font-semibold">Versões Modernas</h3>
-              </div>
-              <p className="mb-4 text-gray-600">Artistas contemporâneos continuam regravando essa obra-prima da bossa nova.</p>
-              <Button asChild className="w-full bg-bossanova-300 hover:bg-bossanova-400">
-                <Link to="/historia">
-                  Descobrir Mais Versões
+              <Button asChild className="mt-4 bg-bossanova-300 hover:bg-bossanova-400">
+                <Link to="/contato" className="flex items-center">
+                  Enviar Mensagem <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
+            </div>
+            
+            <div className="md:w-1/2">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Descubra Mais Versões</CardTitle>
+                  <CardDescription>Conheça as diversas interpretações deste clássico da música brasileira</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="mb-4">
+                    De Tom Jobim a Frank Sinatra, de João Gilberto a Amy Winehouse, 
+                    "Garota de Ipanema" foi regravada por artistas de diferentes épocas e estilos.
+                  </p>
+                  <Button asChild className="w-full">
+                    <Link to="/versoes">
+                      Explorar Versões Famosas
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
