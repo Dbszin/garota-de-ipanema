@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1581373449483-44867d6afee3" 
+                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" 
                 alt="Praia de Ipanema no Rio de Janeiro" 
                 className="rounded-lg shadow-xl max-w-full h-auto"
               />
