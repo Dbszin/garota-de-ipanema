@@ -27,8 +27,8 @@ const Home = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="/lovable-uploads/fae40355-483f-4f5e-9e32-1faabbdc3bd2.png" 
-                alt="Garota de Ipanema" 
+                src="https://images.unsplash.com/photo-1581373449483-44867d6afee3" 
+                alt="Praia de Ipanema no Rio de Janeiro" 
                 className="rounded-lg shadow-xl max-w-full h-auto"
               />
             </div>
@@ -49,7 +49,7 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <img 
-                  src="https://images.unsplash.com/photo-1493862236390-b411197cf4d0" 
+                  src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" 
                   alt="Partitura Musical" 
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
@@ -64,8 +64,8 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <img 
-                  src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" 
-                  alt="Mapa Mundial" 
+                  src="https://images.unsplash.com/photo-1524721696987-b9527df9e512" 
+                  alt="Grammy Awards" 
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p>Em 1964, a versão em inglês "The Girl from Ipanema" ganhou o Grammy de Gravação do Ano, levando a bossa nova para o mundo.</p>
@@ -79,7 +79,7 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <img 
-                  src="https://images.unsplash.com/photo-1535569807835-7fab2c171cd3" 
+                  src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a" 
                   alt="Praia de Ipanema" 
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
